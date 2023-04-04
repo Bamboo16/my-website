@@ -1,0 +1,28 @@
+.card {
+  display: flex;
+  flex-direction: column;
+  padding: 1rem 2rem;
+  background-color: rebeccapurple;
+  border-radius: 1rem;
+  gap: 1rem;
+  width: 500px;
+  transition: 300ms;
+}
+
+.card:hover {
+  cursor: pointer;
+  transition: 300ms;
+  transform: scale(0.98) perspective(1px)
+
+}
+
+@media (max-width: 996px) {
+  .card {
+    place-self: center;
+
+  }
+}
+
+.card img {
+  border-radius: 25px;
+}
